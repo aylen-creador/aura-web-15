@@ -1,8 +1,11 @@
+import { invitations } from "@/data/invitations";
+
+const invitation = invitations.valentina;
 export default function RSVP() {
-  const phone = "5491122628041";
+  const phone = invitation.rsvp.phone;
 
   const message = encodeURIComponent(
-    "Hola! Quiero confirmar mi asistencia a los 15 de Valentina. 💜"
+    invitation.rsvp.message
   );
 
   const whatsappUrl = `https://wa.me/${phone}?text=${message}`;
@@ -19,7 +22,7 @@ export default function RSVP() {
       </h2>
 
       <p className="max-w-md mx-auto text-sm leading-7 text-gray-500 mb-10">
-        Confirmá tu asistencia antes del 10 de marzo.
+        Confirmá tu asistencia antes del {invitation.rsvp.deadline}.
         ¡Te esperamos para celebrar juntos!
       </p>
 

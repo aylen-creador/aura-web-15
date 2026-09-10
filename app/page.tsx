@@ -1,4 +1,5 @@
 "use client";
+import { invitations } from "@/data/invitations";
 import MusicButton from "@/components/MusicButton";
 import Countdown from "@/components/Countdown";
 import EventInfo from "@/components/EventInfo";
@@ -8,10 +9,11 @@ import Gifts from "@/components/Gifts";
 import RSVP from "@/components/RSVP";
 import Closing from "@/components/Closing";
 import ScrollReveal from "@/components/ScrollReveal";
+const invitation = invitations.gabriela;
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#faf7f8] text-[#3d3037]">
-      <audio id="music" src="/music/musica.mp3" loop />
+      <audio id="music" src={invitation.music} loop />
       <MusicButton />
       
 
@@ -19,7 +21,7 @@ export default function Home() {
       {/* PORTADA */}
   <section
   className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative bg-cover bg-center"
-  style={{ backgroundImage: "url('/images/portada.png')" }}
+  style={{ backgroundImage: `url('${invitation.coverImage}')` }}
 >
   
   <div className="absolute inset-0 bg-black/30" />
@@ -30,17 +32,17 @@ export default function Home() {
 
     {/* MIS 15 AÑOS */}
     <p className="uppercase tracking-[0.35em] text-sm mb-6 animate-[fadeInDown_1s_ease-out_forwards] opacity-0">
-      Mis 15 años
+      {invitation.eventType}
     </p>
 
     {/* NOMBRE */}
     <h1 className="text-7xl md:text-9xl font-serif font-medium tracking-wide animate-[fadeInUp_1.2s_ease-out_0.3s_forwards] opacity-0">
-  Valentina
+  {invitation.name}
 </h1>
 
     {/* FECHA */}
     <p className="mt-6 text-lg tracking-widest animate-[fadeInUp_1.2s_ease-out_0.6s_forwards] opacity-0">
-      20 · 03 · 2027
+      {invitation.date}
     </p>
 
     {/* DESLIZÁ */}
@@ -64,13 +66,11 @@ export default function Home() {
     <div className="text-4xl md:text-5xl font-serif font-medium leading-[1.35] text-[#3d3037]">
 
       <p>
-        Hay momentos que soñamos
-        toda la vida...
+        Érase una vez un día muy especial...
       </p>
 
       <p className="mt-8">
-        y hoy quiero compartir
-        uno de ellos con vos.
+        y quiero que seas parte de él.
       </p>
 
     </div>

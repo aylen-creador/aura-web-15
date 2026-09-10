@@ -1,9 +1,12 @@
 "use client";
+import { invitations } from "@/data/invitations";
+
+const invitation = invitations.valentina;
 
 import { useEffect, useState } from "react";
 
 export default function Countdown() {
-  const targetDate = new Date("2027-03-20T20:00:00").getTime();
+  const targetDate = new Date(invitation.countdownDate).getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

@@ -1,12 +1,15 @@
 "use client";
 
 import { useState } from "react";
+import { invitations } from "@/data/invitations";
+
+const invitation = invitations.valentina;
 
 export default function Gifts() {
   const [showData, setShowData] = useState(false);
   const [copied, setCopied] = useState(false);
 
-  const alias = "VALENTINA.15";
+  const alias = invitation.gifts.alias;
 
  const copyAlias = async () => {
   try {

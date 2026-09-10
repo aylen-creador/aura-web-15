@@ -1,3 +1,6 @@
+import { invitations } from "@/data/invitations";
+
+const invitation = invitations.valentina;
 export default function EventInfo() {
   return (
     <section className="py-24 px-6 bg-[#F8F0FB] text-center">
@@ -24,19 +27,19 @@ export default function EventInfo() {
           </p>
 
           <h3 className="text-3xl font-serif mt-4">
-            20:00 hs
+            {invitation.ceremony.time}
           </h3>
 
           <p className="mt-6 font-medium">
-            Nuestra Señora del Pilar
+            {invitation.ceremony.name}
           </p>
 
           <p className="text-sm mt-2 text-gray-500">
-            Paso de los Libres 695 · Pilar
+            {invitation.ceremony.address}
           </p>
 
           <a
-  href="https://maps.app.goo.gl/2XvgnvKYZCKAEB988"
+  href={invitation.ceremony.mapUrl}
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block mt-8 px-7 py-3 border border-[#3d3037] rounded-full uppercase tracking-widest text-xs hover:bg-[#3d3037] hover:text-white transition"
@@ -59,20 +62,20 @@ export default function EventInfo() {
           </p>
 
           <h3 className="text-3xl font-serif mt-4">
-            21:00 hs
+            {invitation.party.time}
           </h3>
 
           <p className="mt-6 font-medium">
-            Salón El Dorado - Eventos
+            {invitation.party.name}
           </p>
 
           <p className="text-sm mt-2 text-gray-500">
-            Vasco Da Gama 122 · Pilar
+            {invitation.party.address}
           </p>
           
 
          <a
-  href="https://maps.app.goo.gl/r3msZsbiMsArgU8Q7"
+  href={invitation.party.mapUrl}
   target="_blank"
   rel="noopener noreferrer"
   className="inline-block mt-8 px-7 py-3 border border-[#3d3037] rounded-full uppercase tracking-widest text-xs hover:bg-[#3d3037] hover:text-white transition"

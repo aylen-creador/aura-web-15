@@ -1,11 +1,9 @@
+import { invitations } from "@/data/invitations";
+
+const invitation = invitations.valentina;
+
 export default function Gallery() {
-  const photos = [
-    "/images/portada.png",
-    "/images/mesadulce.png",
-    "/images/vestido.png",
-    "/images/detalle.png",
-    "/images/salon.png",
-  ];
+  const photos = invitation.gallery;
 
   return (
     <section className="py-24 px-6 bg-[#F8F0FB]">
