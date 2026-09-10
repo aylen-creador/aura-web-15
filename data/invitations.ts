@@ -61,7 +61,7 @@ gallery: [
       mapUrl: "https://maps.app.goo.gl/r3msZsbiMsArgU8Q7",
     },
 
-    music: "/music/musica.mp3",
+    music: "/music/valentina/musica.mp3",
 
     coverImage: "/images/portada.png",
   },
@@ -83,7 +83,7 @@ gallery: [
 
 rsvp: {
   phone: "5491122628041",
-  message: "Hola! Quiero confirmar mi asistencia a los 15 de Valentina. 💜",
+  message: "Hola! Quiero confirmar mi asistencia al cumpleaños de Gabriela. 💜",
   deadline: "10 de marzo",
 },
 
@@ -131,7 +131,7 @@ gallery: [
       mapUrl: "https://maps.app.goo.gl/r3msZsbiMsArgU8Q7",
     },
 
-    music: "/music/musica.mp3",
+    music: "/music/gabriela/musica.mp3",
 
     coverImage: "/images/portada.png",
   },
