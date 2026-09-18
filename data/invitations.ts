@@ -1,3 +1,4 @@
+//Plantilla Valentina//
 export const invitations = {
   valentina: {
     name: "Valentina",
@@ -40,11 +41,11 @@ rsvp: {
 },
 
 gallery: [
-  "/images/portada.png",
-  "/images/mesadulce.png",
-  "/images/vestido.png",
-  "/images/detalle.png",
-  "/images/salon.png",
+  "/images/valentina/portada.png",
+  "/images/valentina/mesadulce.png",
+  "/images/valentina/vestido.png",
+  "/images/valentina/detalle.png",
+  "/images/valentina/salon.png",
 ],
 
     ceremony: {
@@ -63,18 +64,24 @@ gallery: [
 
     music: "/music/valentina/musica.mp3",
 
-    coverImage: "/images/portada.png",
+    coverImage: "/images/valentina/portada.png",
+
+    theme: {
+      background: "#faf7f8",
+      primary: "#FFD1DC",
+      secondary: "#E0E0E0",
+      accent: "#000000",
+    },
   },
 
-
-//Plantilla Ariel//
+//Plantilla Sirenita//
 
   gabriela: {
     name: "Gabriela",
 
-    eventType: "Mis 5 años",
+    eventType: "Cumple 5 años",
 
-    date: "20 · 03 · 2027",
+    date: "20 · 01 · 2027",
     countdownDate: "2027-03-20T20:00:00",
 
     gifts: {
@@ -90,31 +97,30 @@ rsvp: {
 
 
     dressCode: {
-  title: "Elegante",
+  title: "Sirena",
   description:
-    "Una noche especial merece un look especial. Elegí tu estilo y vení a celebrar conmigo.",
+    "Se parte de esta aventura completa y celebra conmigo.",
   colors: [
     {
       name: "Rosa",
       color: "#FFD1DC",
     },
     {
-      name: "Gris",
-      color: "#E0E0E0",
+      name: "Turquesa",
+      color: "#40E0D0",
     },
     {
-      name: "Negro",
-      color: "#000000",
+      name: "Azul",
+      color: "#0000b8",
     },
   ],
 },
 
 gallery: [
-  "/images/portada.png",
-  "/images/mesadulce.png",
-  "/images/vestido.png",
-  "/images/detalle.png",
-  "/images/salon.png",
+  "/images/gabriela/portada.jpg",
+  "/images/gabriela/imagen1.jpg",
+  "/images/gabriela/imagen2.jpg",
+  "/images/gabriela/imagen3.jpg",
 ],
 
     ceremony: {
@@ -133,6 +139,13 @@ gallery: [
 
     music: "/music/gabriela/musica.mp3",
 
-    coverImage: "/images/portada.png",
+    coverImage: "/images/gabriela/portada.jpg",
+    
+    theme: {
+      background: "#faf7f8",
+      primary: "#FFD1DC",
+      secondary: "#40E0D0",
+      accent: "#0000b8",
+    },
   },
 }; 

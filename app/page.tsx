@@ -12,7 +12,10 @@ import ScrollReveal from "@/components/ScrollReveal";
 const invitation = invitations.gabriela;
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#faf7f8] text-[#3d3037]">
+    <main
+  className="min-h-screen text-[#3d3037]"
+  style={{ backgroundColor: invitation.theme.background }}
+>
       <audio id="music" src={invitation.music} loop />
       <MusicButton />
       
@@ -96,7 +99,7 @@ export default function Home() {
 
       {/* DRESS CODE */}
       <ScrollReveal>
-      <DressCode />
+      <DressCode invitation={invitation} />
       </ScrollReveal>
 
 
